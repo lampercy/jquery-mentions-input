@@ -267,6 +267,11 @@
 
           return false;
 
+
+        case KEY.ESC:
+          hideAutoComplete();
+          return false;
+
         case KEY.RETURN:
         case KEY.TAB:
           if (elmActiveAutoCompleteItem && elmActiveAutoCompleteItem.length) {
